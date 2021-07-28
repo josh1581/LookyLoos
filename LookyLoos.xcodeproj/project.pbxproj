@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A2FF9D7266942AE00BB1828 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF9D6266942AE00BB1828 /* MapViewController.swift */; };
+		9A2FF9D9266978DD00BB1828 /* LocationSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF9D8266978DD00BB1828 /* LocationSearchTableViewController.swift */; };
+		9A430AC1266A98A700B7A179 /* MapviewBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A430AC0266A98A700B7A179 /* MapviewBackup.swift */; };
+		9A621AC22667FC8D00C16275 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A621AC12667FC8D00C16275 /* Map.storyboard */; };
+		9AA4D038266FF0660015D243 /* Pins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4D037266FF0660015D243 /* Pins.swift */; };
+		9AA4D03A266FF0A70015D243 /* PinsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4D039266FF0A70015D243 /* PinsController.swift */; };
+		9AC98A2D266695CA0028472F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC98A2C266695CA0028472F /* AppDelegate.swift */; };
+		9AC98A2F266695CA0028472F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC98A2E266695CA0028472F /* SceneDelegate.swift */; };
+		9AC98A34266695CA0028472F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AC98A32266695CA0028472F /* Main.storyboard */; };
+		9AC98A36266695CB0028472F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AC98A35266695CB0028472F /* Assets.xcassets */; };
+		9AC98A39266695CB0028472F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AC98A37266695CB0028472F /* LaunchScreen.storyboard */; };
+		9AC98A41266697FD0028472F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AC98A40266697FD0028472F /* GoogleService-Info.plist */; };
+		9AC98A482666C4C50028472F /* MapViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC98A472666C4C50028472F /* MapViewController2.swift */; };
+		E122E68B8667D1C4E99218D9 /* Pods_LookyLoos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9B817FAB5FFC52AA15A89B /* Pods_LookyLoos.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		91261B38C5455122E9B5905A /* Pods-LookyLoos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LookyLoos.release.xcconfig"; path = "Target Support Files/Pods-LookyLoos/Pods-LookyLoos.release.xcconfig"; sourceTree = "<group>"; };
+		9A2FF9D6266942AE00BB1828 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9A2FF9D8266978DD00BB1828 /* LocationSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTableViewController.swift; sourceTree = "<group>"; };
+		9A430AC0266A98A700B7A179 /* MapviewBackup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapviewBackup.swift; sourceTree = "<group>"; };
+		9A621AC12667FC8D00C16275 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		9AA4D037266FF0660015D243 /* Pins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Pins.swift; path = LookyLoos/Models/Pins.swift; sourceTree = SOURCE_ROOT; };
+		9AA4D039266FF0A70015D243 /* PinsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinsController.swift; sourceTree = "<group>"; };
+		9AC98A29266695CA0028472F /* LookyLoos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LookyLoos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC98A2C266695CA0028472F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9AC98A2E266695CA0028472F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9AC98A33266695CA0028472F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AC98A35266695CB0028472F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AC98A38266695CB0028472F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9AC98A3A266695CB0028472F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AC98A40266697FD0028472F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9AC98A472666C4C50028472F /* MapViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController2.swift; sourceTree = "<group>"; };
+		BE9B817FAB5FFC52AA15A89B /* Pods_LookyLoos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LookyLoos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE88D3B6B88F6CB0D244F152 /* Pods-LookyLoos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LookyLoos.debug.xcconfig"; path = "Target Support Files/Pods-LookyLoos/Pods-LookyLoos.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AC98A26266695CA0028472F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E122E68B8667D1C4E99218D9 /* Pods_LookyLoos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		313D2B6653B123994175F969 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE9B817FAB5FFC52AA15A89B /* Pods_LookyLoos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48B065BF40DDE5EF49259DB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE88D3B6B88F6CB0D244F152 /* Pods-LookyLoos.debug.xcconfig */,
+				91261B38C5455122E9B5905A /* Pods-LookyLoos.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9A65C60D26AF8080005063E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9AA4D037266FF0660015D243 /* Pins.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9AA4D033266FF01B0015D243 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9AA4D039266FF0A70015D243 /* PinsController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		9AA4D034266FF02C0015D243 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9A2FF9D6266942AE00BB1828 /* MapViewController.swift */,
+				9A2FF9D8266978DD00BB1828 /* LocationSearchTableViewController.swift */,
+				9AC98A472666C4C50028472F /* MapViewController2.swift */,
+				9A430AC0266A98A700B7A179 /* MapviewBackup.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9AC98A20266695CA0028472F = {
+			isa = PBXGroup;
+			children = (
+				9AC98A2B266695CA0028472F /* LookyLoos */,
+				9AC98A2A266695CA0028472F /* Products */,
+				48B065BF40DDE5EF49259DB8 /* Pods */,
+				313D2B6653B123994175F969 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9AC98A2A266695CA0028472F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AC98A29266695CA0028472F /* LookyLoos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AC98A2B266695CA0028472F /* LookyLoos */ = {
+			isa = PBXGroup;
+			children = (
+				9A65C60D26AF8080005063E0 /* Models */,
+				9AC98A442666AFA70028472F /* Controllers */,
+				9AC98A432666AFA20028472F /* Views */,
+				9AC98A422666AF6B0028472F /* Resources */,
+			);
+			path = LookyLoos;
+			sourceTree = "<group>";
+		};
+		9AC98A422666AF6B0028472F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9AC98A40266697FD0028472F /* GoogleService-Info.plist */,
+				9AC98A2C266695CA0028472F /* AppDelegate.swift */,
+				9AC98A2E266695CA0028472F /* SceneDelegate.swift */,
+				9AC98A35266695CB0028472F /* Assets.xcassets */,
+				9AC98A3A266695CB0028472F /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9AC98A432666AFA20028472F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9AC98A462666AFBC0028472F /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9AC98A442666AFA70028472F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9AA4D034266FF02C0015D243 /* View Controllers */,
+				9AA4D033266FF01B0015D243 /* Model Controller */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9AC98A462666AFBC0028472F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9AC98A32266695CA0028472F /* Main.storyboard */,
+				9AC98A37266695CB0028472F /* LaunchScreen.storyboard */,
+				9A621AC12667FC8D00C16275 /* Map.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AC98A28266695CA0028472F /* LookyLoos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AC98A3D266695CB0028472F /* Build configuration list for PBXNativeTarget "LookyLoos" */;
+			buildPhases = (
+				3394F67CADDBD38EEF9FABE1 /* [CP] Check Pods Manifest.lock */,
+				9AC98A25266695CA0028472F /* Sources */,
+				9AC98A26266695CA0028472F /* Frameworks */,
+				9AC98A27266695CA0028472F /* Resources */,
+				26A0E0E2705CF05928613338 /* [CP] Embed Pods Frameworks */,
+				738094C31EAD75134A0F36EB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LookyLoos;
+			productName = LookyLoos;
+			productReference = 9AC98A29266695CA0028472F /* LookyLoos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AC98A21266695CA0028472F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					9AC98A28266695CA0028472F = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 9AC98A24266695CA0028472F /* Build configuration list for PBXProject "LookyLoos" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AC98A20266695CA0028472F;
+			productRefGroup = 9AC98A2A266695CA0028472F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AC98A28266695CA0028472F /* LookyLoos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AC98A27266695CA0028472F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC98A39266695CB0028472F /* LaunchScreen.storyboard in Resources */,
+				9AC98A41266697FD0028472F /* GoogleService-Info.plist in Resources */,
+				9A621AC22667FC8D00C16275 /* Map.storyboard in Resources */,
+				9AC98A36266695CB0028472F /* Assets.xcassets in Resources */,
+				9AC98A34266695CA0028472F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26A0E0E2705CF05928613338 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LookyLoos/Pods-LookyLoos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LookyLoos/Pods-LookyLoos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LookyLoos/Pods-LookyLoos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3394F67CADDBD38EEF9FABE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LookyLoos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		738094C31EAD75134A0F36EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LookyLoos/Pods-LookyLoos-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LookyLoos/Pods-LookyLoos-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LookyLoos/Pods-LookyLoos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AC98A25266695CA0028472F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC98A482666C4C50028472F /* MapViewController2.swift in Sources */,
+				9AC98A2D266695CA0028472F /* AppDelegate.swift in Sources */,
+				9A2FF9D9266978DD00BB1828 /* LocationSearchTableViewController.swift in Sources */,
+				9A430AC1266A98A700B7A179 /* MapviewBackup.swift in Sources */,
+				9AA4D038266FF0660015D243 /* Pins.swift in Sources */,
+				9AA4D03A266FF0A70015D243 /* PinsController.swift in Sources */,
+				9AC98A2F266695CA0028472F /* SceneDelegate.swift in Sources */,
+				9A2FF9D7266942AE00BB1828 /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9AC98A32266695CA0028472F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AC98A33266695CA0028472F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9AC98A37266695CB0028472F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AC98A38266695CB0028472F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AC98A3B266695CB0028472F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9AC98A3C266695CB0028472F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AC98A3E266695CB0028472F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE88D3B6B88F6CB0D244F152 /* Pods-LookyLoos.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JP8MGQXS8G;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				INFOPLIST_FILE = LookyLoos/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Josh-Hoyle.LookyLoos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AC98A3F266695CB0028472F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91261B38C5455122E9B5905A /* Pods-LookyLoos.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JP8MGQXS8G;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				INFOPLIST_FILE = LookyLoos/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Josh-Hoyle.LookyLoos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AC98A24266695CA0028472F /* Build configuration list for PBXProject "LookyLoos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC98A3B266695CB0028472F /* Debug */,
+				9AC98A3C266695CB0028472F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AC98A3D266695CB0028472F /* Build configuration list for PBXNativeTarget "LookyLoos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC98A3E266695CB0028472F /* Debug */,
+				9AC98A3F266695CB0028472F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AC98A21266695CA0028472F /* Project object */;
+}
