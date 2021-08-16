@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9A2FF9D7266942AE00BB1828 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF9D6266942AE00BB1828 /* MapViewController.swift */; };
-		9A2FF9D9266978DD00BB1828 /* LocationSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FF9D8266978DD00BB1828 /* LocationSearchTableViewController.swift */; };
-		9A430AC1266A98A700B7A179 /* MapviewBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A430AC0266A98A700B7A179 /* MapviewBackup.swift */; };
-		9A621AC22667FC8D00C16275 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A621AC12667FC8D00C16275 /* Map.storyboard */; };
 		9AA4D038266FF0660015D243 /* Pins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4D037266FF0660015D243 /* Pins.swift */; };
 		9AA4D03A266FF0A70015D243 /* PinsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA4D039266FF0A70015D243 /* PinsController.swift */; };
 		9AC98A2D266695CA0028472F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC98A2C266695CA0028472F /* AppDelegate.swift */; };
@@ -19,16 +16,12 @@
 		9AC98A36266695CB0028472F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AC98A35266695CB0028472F /* Assets.xcassets */; };
 		9AC98A39266695CB0028472F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AC98A37266695CB0028472F /* LaunchScreen.storyboard */; };
 		9AC98A41266697FD0028472F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AC98A40266697FD0028472F /* GoogleService-Info.plist */; };
-		9AC98A482666C4C50028472F /* MapViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC98A472666C4C50028472F /* MapViewController2.swift */; };
 		E122E68B8667D1C4E99218D9 /* Pods_LookyLoos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9B817FAB5FFC52AA15A89B /* Pods_LookyLoos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		91261B38C5455122E9B5905A /* Pods-LookyLoos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LookyLoos.release.xcconfig"; path = "Target Support Files/Pods-LookyLoos/Pods-LookyLoos.release.xcconfig"; sourceTree = "<group>"; };
 		9A2FF9D6266942AE00BB1828 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		9A2FF9D8266978DD00BB1828 /* LocationSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTableViewController.swift; sourceTree = "<group>"; };
-		9A430AC0266A98A700B7A179 /* MapviewBackup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapviewBackup.swift; sourceTree = "<group>"; };
-		9A621AC12667FC8D00C16275 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		9AA4D037266FF0660015D243 /* Pins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Pins.swift; path = LookyLoos/Models/Pins.swift; sourceTree = SOURCE_ROOT; };
 		9AA4D039266FF0A70015D243 /* PinsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinsController.swift; sourceTree = "<group>"; };
 		9AC98A29266695CA0028472F /* LookyLoos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LookyLoos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,7 +32,6 @@
 		9AC98A38266695CB0028472F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AC98A3A266695CB0028472F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AC98A40266697FD0028472F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		9AC98A472666C4C50028472F /* MapViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController2.swift; sourceTree = "<group>"; };
 		BE9B817FAB5FFC52AA15A89B /* Pods_LookyLoos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LookyLoos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE88D3B6B88F6CB0D244F152 /* Pods-LookyLoos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LookyLoos.debug.xcconfig"; path = "Target Support Files/Pods-LookyLoos/Pods-LookyLoos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,9 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				9A2FF9D6266942AE00BB1828 /* MapViewController.swift */,
-				9A2FF9D8266978DD00BB1828 /* LocationSearchTableViewController.swift */,
-				9AC98A472666C4C50028472F /* MapViewController2.swift */,
-				9A430AC0266A98A700B7A179 /* MapviewBackup.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -163,7 +152,6 @@
 			children = (
 				9AC98A32266695CA0028472F /* Main.storyboard */,
 				9AC98A37266695CB0028472F /* LaunchScreen.storyboard */,
-				9A621AC12667FC8D00C16275 /* Map.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -230,7 +218,6 @@
 			files = (
 				9AC98A39266695CB0028472F /* LaunchScreen.storyboard in Resources */,
 				9AC98A41266697FD0028472F /* GoogleService-Info.plist in Resources */,
-				9A621AC22667FC8D00C16275 /* Map.storyboard in Resources */,
 				9AC98A36266695CB0028472F /* Assets.xcassets in Resources */,
 				9AC98A34266695CA0028472F /* Main.storyboard in Resources */,
 			);
@@ -302,10 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AC98A482666C4C50028472F /* MapViewController2.swift in Sources */,
 				9AC98A2D266695CA0028472F /* AppDelegate.swift in Sources */,
-				9A2FF9D9266978DD00BB1828 /* LocationSearchTableViewController.swift in Sources */,
-				9A430AC1266A98A700B7A179 /* MapviewBackup.swift in Sources */,
 				9AA4D038266FF0660015D243 /* Pins.swift in Sources */,
 				9AA4D03A266FF0A70015D243 /* PinsController.swift in Sources */,
 				9AC98A2F266695CA0028472F /* SceneDelegate.swift in Sources */,
@@ -458,6 +442,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = JP8MGQXS8G;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = LookyLoos/Resources/Info.plist;
@@ -479,6 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = JP8MGQXS8G;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = LookyLoos/Resources/Info.plist;

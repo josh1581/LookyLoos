@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Map View Controller-->
+        <!--LookyLoos-->
         <scene sceneID="5Yb-Kc-dh7">
             <objects>
                 <viewController id="UfZ-mq-J3q" customClass="MapViewController" customModule="LookyLoos" customModuleProvider="target" sceneMemberID="viewController">
@@ -83,8 +83,17 @@
                             <constraint firstItem="tcx-rb-MH0" firstAttribute="top" secondItem="uZJ-GY-zxV" secondAttribute="bottom" constant="32" id="tNU-5a-iQt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="azF-Yd-Lyi">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="LM4-JM-9xW"/>
+                    <navigationItem key="navigationItem" title="LookyLoos" id="azF-Yd-Lyi">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="MGI-OX-jEt">
+                            <connections>
+                                <action selector="logoutButtonTapped:" destination="UfZ-mq-J3q" id="IuA-He-ImJ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Help" id="LM4-JM-9xW">
+                            <connections>
+                                <segue destination="snS-QT-FJu" kind="show" id="RAr-IO-liG"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="hZN-XW-keN" id="Mb1-sl-NAh"/>
@@ -94,49 +103,74 @@
             </objects>
             <point key="canvasLocation" x="1542.0289855072465" y="83.705357142857139"/>
         </scene>
-        <!--Location Search Table View Controller-->
-        <scene sceneID="wFX-Fk-lOZ">
+        <!--View Controller-->
+        <scene sceneID="925-AR-0M9">
             <objects>
-                <tableViewController storyboardIdentifier="LocationSearchTable" id="kAY-Ok-uFb" customClass="LocationSearchTableViewController" customModule="LookyLoos" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uZf-9b-DXI">
+                <viewController id="snS-QT-FJu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ffA-6w-Mrm">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Using LookyLoos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hol-7w-wLt">
+                                <rect key="frame" x="116" y="144" width="196" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="Oyc-uL-KNT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BZ-Uh-vwy">
+                                <rect key="frame" x="18" y="224" width="392" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="392" id="WIv-vW-5We"/>
+                                    <constraint firstAttribute="height" constant="152" id="xfZ-u5-L28"/>
+                                </constraints>
+                                <string key="text">To view what is going on, simply click a pin on the map to view that event info.  To add your own events, click the respective vehicle button at the bottom and add your own event info.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reporting Offensive Content" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjk-U2-Wz7">
+                                <rect key="frame" x="62" y="432" width="304" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="DL9-kb-WY4"/>
+                                    <constraint firstAttribute="width" constant="304" id="lNN-4e-ctg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ArB-vp-5QK">
+                                <rect key="frame" x="18" y="512" width="392" height="101.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="392" id="yYa-to-l0I"/>
+                                </constraints>
+                                <string key="text">To report offensive content in events, simply click the pin in question and click the button with the "i" on it to bring up the menu to make a report and/or block content from that user from being seen by you in the future.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sf7-Gt-OPL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchCell" textLabel="sGX-41-j0w" detailTextLabel="Y62-Le-INM" style="IBUITableViewCellStyleSubtitle" id="mdw-Rf-uyx">
-                                <rect key="frame" x="0.0" y="24.333333969116211" width="428" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mdw-Rf-uyx" id="Nxv-KC-yT1">
-                                    <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sGX-41-j0w">
-                                            <rect key="frame" x="20" y="7.0000000000000009" width="25" height="14.333333333333334"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y62-Le-INM">
-                                            <rect key="frame" x="19.999999999999996" y="23.333333333333336" width="40.666666666666664" height="13.333333333333334"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="kAY-Ok-uFb" id="Qo4-tK-fjm"/>
-                            <outlet property="delegate" destination="kAY-Ok-uFb" id="yiN-Oo-AcZ"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JEl-zg-0Ol" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="hjk-U2-Wz7" firstAttribute="top" secondItem="8BZ-Uh-vwy" secondAttribute="bottom" constant="56" id="2fC-EB-5jY"/>
+                            <constraint firstItem="8BZ-Uh-vwy" firstAttribute="top" secondItem="hol-7w-wLt" secondAttribute="bottom" constant="56" id="9zZ-kd-MEA"/>
+                            <constraint firstItem="hol-7w-wLt" firstAttribute="centerX" secondItem="sf7-Gt-OPL" secondAttribute="centerX" id="QSv-mw-Kly"/>
+                            <constraint firstItem="8BZ-Uh-vwy" firstAttribute="centerX" secondItem="sf7-Gt-OPL" secondAttribute="centerX" id="TW1-2Q-t0z"/>
+                            <constraint firstItem="hol-7w-wLt" firstAttribute="top" secondItem="sf7-Gt-OPL" secondAttribute="top" constant="56" id="XRR-EV-gWk"/>
+                            <constraint firstItem="hjk-U2-Wz7" firstAttribute="centerX" secondItem="sf7-Gt-OPL" secondAttribute="centerX" id="kA9-xk-Dct"/>
+                            <constraint firstItem="8BZ-Uh-vwy" firstAttribute="top" secondItem="hol-7w-wLt" secondAttribute="bottom" constant="56" id="n8u-4q-OrE"/>
+                            <constraint firstItem="ArB-vp-5QK" firstAttribute="centerX" secondItem="sf7-Gt-OPL" secondAttribute="centerX" id="os7-Kq-xHs"/>
+                            <constraint firstItem="ArB-vp-5QK" firstAttribute="top" secondItem="hjk-U2-Wz7" secondAttribute="bottom" constant="56" id="s3G-fe-dDq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YsF-fG-3zr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w6h-Zn-eM3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2225" y="-214"/>
+            <point key="canvasLocation" x="2491.1214953271028" y="-414.03887688984884"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="F1K-oX-Wle">
