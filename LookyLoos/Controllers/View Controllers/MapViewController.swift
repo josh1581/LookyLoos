@@ -23,7 +23,6 @@ class MapViewController: UIViewController {
     //MARK: - Properties
     let locationManager = CLLocationManager()
     let db = Firestore.firestore()
-    var resultSearchController:UISearchController? = nil
     var ref: DocumentReference? = nil
     var userUID = ""
     var blocked: [String] = []
@@ -32,10 +31,6 @@ class MapViewController: UIViewController {
     
     //MARK: - Lifecycle
     
-    
-    override func viewWillAppear(_ animated: Bool) {
-        
-    }
     
     
     override func viewDidLoad() {
@@ -47,7 +42,6 @@ class MapViewController: UIViewController {
         guard let uid = Auth.auth().currentUser?.uid else
         {return}
         self.userUID = uid
-        print(self.userUID)
         group.leave()
         
         group.enter()
@@ -57,16 +51,7 @@ class MapViewController: UIViewController {
             self?.loadAndPublishPins()
         }
         group.leave()
-        
-        
-        
-        
-        
-        
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        
+     
     }
     
     //MARK: - Actions
@@ -151,7 +136,7 @@ class MapViewController: UIViewController {
     }
     
     
-    func displayPinsFromDB() {
+    func fetchAndDisplayPinsFromDB() {
         db.collection("pins").addSnapshotListener { QuerySnapshot, Error in
             guard let documents = QuerySnapshot?.documents else {
                 print("No documents")
@@ -193,7 +178,7 @@ class MapViewController: UIViewController {
             }else{
                 let eventTitle = "\(eventType): \(eventText)"
                 self.addAnnotation(coordinate: CLLocationCoordinate2D(latitude: latitude, longitude: longitude), evenTitle: eventTitle, eventSubtitle: self.userUID)
-                self.savePinToDB(eventTitle: eventTitle, eventSubtitle: self.userUID, latitude: latitude, longitude: longitude)
+                PinsController.savePinToDB(eventTitle: eventTitle, eventSubtitle: self.userUID, latitude: latitude, longitude: longitude)
             }
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
@@ -258,13 +243,13 @@ class MapViewController: UIViewController {
         locationManager.stopUpdatingLocation()
         group.leave()
         group.notify(queue: DispatchQueue.global()) {
-            self.displayPinsFromDB()
+            self.fetchAndDisplayPinsFromDB()
         }
         eula()
     }
     
     
-    
+    /*
     func savePinToDB(eventTitle: String, eventSubtitle: String, latitude: Double, longitude: Double) {
         let newPinRef = db.collection("pins").document()
         newPinRef.setData([
@@ -286,7 +271,7 @@ class MapViewController: UIViewController {
             "lastUpdated": FieldValue.serverTimestamp()
         ])
     }
-    
+  */
     func showLoginVC() {
         let authUI = FUIAuth.defaultAuthUI()
         let providers = [FUIEmailAuth()]
@@ -338,7 +323,8 @@ extension MapViewController: MKMapViewDelegate {
                     guard let reportText = alertController.textFields?.first?.text else {return}
                     let reportTitle = view.annotation?.title
                     let reportSubtitle = view.annotation?.subtitle
-                    self.saveReportToDB(reportTitle: (reportTitle ?? "") ?? "", reportSubtitle: (reportSubtitle ?? "") ?? "", reportText: reportText)
+                    
+                    PinsController.saveReportToDB(reportTitle: (reportTitle ?? "") ?? "", reportSubtitle: (reportSubtitle ?? "") ?? "", reportText: reportText)
                 }
                 let blockAction = UIAlertAction(title: "Block", style: .default) { (_) in
                     guard let userToBlock  = view.annotation?.subtitle else
